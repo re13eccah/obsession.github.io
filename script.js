@@ -1,4 +1,4 @@
-pts.namespace( window );
+Pts.namespace( window );
 
 // Source code licensed under Apache License 2.0. 
 // Copyright © 2021 William Ngan. (https://github.com/williamngan/pts)
