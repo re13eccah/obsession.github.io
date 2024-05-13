@@ -18,17 +18,11 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff00;
-}
-
-h1 {
-  background-color: #ffffff00; 
 }
 
 #centered-gif {
   max-width: 100%;
   height: auto;
-  background-color: #ffffff00;
 }
 
 
