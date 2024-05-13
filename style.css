@@ -18,17 +18,17 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: transparent !important; /* Override any existing background color */
+  background-color: #ff000000;
 }
 
 h1 {
-  background-color: transparent !important; /* Override any existing background color of the h1 element */
+  background-color: #ff000000; 
 }
 
 #centered-gif {
   max-width: 100%;
   height: auto;
-  background-color: transparent !important; /* Override any existing background color of the image */
+  background-color: #ff000000;
 }
 
 
