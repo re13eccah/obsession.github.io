@@ -5,10 +5,14 @@
 }
 
 #bg-pixels {
-  background-color: #666;
+  background-color: #1c1484;
   height: 100vh;
   width: 100vw;
   z-index: -20;
+}
+
+h1 {
+  background-color: transparent;
 }
 
 body, html {
@@ -18,6 +22,7 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
 }
 
 #centered-gif {
