@@ -1,6 +1,7 @@
 * {
   margin: 0;
   Padding: 0;
+  box-sizing: border-box;
 }
 
 #bg-pixels {
@@ -17,15 +18,17 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0); /* Set background color to fully transparent */
+  background-color: transparent;
 }
 
 h1 {
-  background-color: rgba(0, 0, 0, 0); /* Set background color of the h1 element to transparent */
+  background-color: transparent; 
 }
 
 #centered-gif {
   max-width: 100%;
   height: auto;
-  background-color: rgba(0, 0, 0, 0); /* Set background color of the image to transparent */
+  background-color: transparent;
 }
+
+
