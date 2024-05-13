@@ -11,10 +11,6 @@
   z-index: -20;
 }
 
-h1 {
-  background-color: transparent;
-}
-
 body, html {
   height: 100%;
   margin: 0;
@@ -22,10 +18,16 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
+  background-color: transparent; /* Set background color to transparent */
+}
+
+h1 {
+  background-color: transparent; /* Set background color of the h1 element to transparent */
 }
 
 #centered-gif {
   max-width: 100%;
   height: auto;
+  background-color: transparent; /* Set background color of the image to transparent */
 }
+
