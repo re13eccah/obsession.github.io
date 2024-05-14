@@ -158,3 +158,13 @@ h1 {
   background-color: rgba(255, 255, 255, 0.1); 
   border-radius: 5px; 
 }
+
+.content {
+  position: absolute;
+  top: 50%;
+  right: calc(50% + 100px); /* Adjust as needed */
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 12px; /* Adjust font size as needed */
+  text-align: right;
+}
