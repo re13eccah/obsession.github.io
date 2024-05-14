@@ -62,7 +62,7 @@ body, html {
 }
 
 #centered-text:hover {
-  color: #001aff; 
+  color: #d0ff00; 
 }
 
 h1 {
@@ -74,4 +74,14 @@ h1 {
   height: auto;
   background-color: transparent;
 }
+
+#bottom-left-gif {
+  max-width: 100%;
+  height: auto;
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
 
