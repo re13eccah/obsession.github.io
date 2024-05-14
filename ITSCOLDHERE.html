@@ -20,28 +20,64 @@
       text-align: center;
       color: rgb(255, 255, 255);
     }
-
     .top-left-gif {
       position: absolute;
       top: 20px; 
       left: 20px; 
       z-index: 10; 
     }
-
+    .buttons {
+      margin-top: 20px;
+    }
+    button {
+      background-color: #ffcc00;
+      border: none;
+      color: black;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      font-size: 16px;
+      font-family: 'Comic Sans MS', cursive;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #ffaa00;
+    }
+    .flash-image {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 100;
+      width: 1000px; /* Adjust the width */
+      height: 400px; /* Adjust the height */
+    }
   </style>
-
-<link rel="icon" type="image/gif" href="dead favicon.gif">
-
 </head>
 <body>
-    
-    <a href="index.html" class="top-left-gif">
-        <img src="star1.gif" alt="Home">
-      </a>
-
+  <a href="index.html" class="top-left-gif">
+    <img src="star1.gif" alt="Home">
+  </a>
   <div class="centered-text">
     <h1>They don't love me Much</h1>
-    <p>would you say power would go to your head quickly if you became a God-Like being? there is a right answer.</p>
+    <p>do you think power would go to your head quickly if you became a God-Like being?</p>
+    <div class="buttons">
+      <button onclick="showFlashImage('flashImageYes')">Yes</button>
+      <button onclick="showFlashImage('flashImageNo')">No</button>
+    </div>
   </div>
+  <img src="correct.gif" alt="Yes Image" class="flash-image" id="flashImageYes">
+  <img src="liar.gif" alt="No Image" class="flash-image" id="flashImageNo">
+
+  <script>
+    function showFlashImage(imageId) {
+      var flashImage = document.getElementById(imageId);
+      flashImage.style.display = 'block';
+      setTimeout(function() {
+        flashImage.style.display = 'none';
+      }, 2000); // Image will be displayed for 2 seconds
+    }
+  </script>
 </body>
 </html>
