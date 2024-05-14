@@ -16,23 +16,23 @@
     overflow: hidden;
   }
 
-.top-left-gif {
-      position: absolute;
-      top: 20px; 
-      left: 20px; 
-      z-index: 10; 
-    }
+  .top-left-gif {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+  }
 
-    .title {
+  .title {
     position: absolute;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    color: #0044ff; 
+    color: #0044ff;
     font-family: 'Comic Sans MS', cursive;
-    font-size: 4em; 
+    font-size: 4em;
     text-align: center;
-    z-index: 5; 
+    z-index: 5;
   }
 
   /* Card container */
@@ -57,6 +57,7 @@
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.5s;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
   }
 
   /* Card face */
@@ -65,24 +66,37 @@
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Align children vertically */
+    box-sizing: border-box; /* Ensure padding does not increase the size of the card */
   }
 
-  /* Front of the card */
   .card-front {
     background-color: #f0f0f0; /* Front background color */
   }
 
-  /* Back of the card */
   .card-back {
     background-color: #faff6c; /* Back background color */
     transform: rotateY(180deg);
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding does not increase the size of the card */
   }
 
   /* Text on the back of the card */
+  .card-back h1 {
+    font-size: 1.5em; /* Adjust the font size */
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+
   .card-back p {
     text-align: center;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    padding: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0; /* Ensure no extra margins */
   }
 
   /* Image styling */
@@ -100,11 +114,11 @@
 </head>
 <body>
 
-    <a href="index.html" class="top-left-gif">
-        <img src="star1.gif" alt="Home">
-      </a>
+<a href="index.html" class="top-left-gif">
+  <img src="star1.gif" alt="Home">
+</a>
 
-      <div class="title">THE SECRETS TO SUCCESSFUL SIMS</div>
+<div class="title">THE SECRETS TO SUCCESSFUL SIMS</div>
 
 <div class="card-container">
   <div class="card">
@@ -113,7 +127,8 @@
         <img class="card-image" src="fam.ico" alt="Front Image">
       </div>
       <div class="card-face card-back">
-        <p>Back of Card 1</p>
+        <h1>USE OTHER SIMS FOR BUSINESS</h1>
+        <p>The best way to make money is to TAKE money. It is NOT morally wrong to marry a rich sim and then remove the pool ladder, if you catch my drift.</p>
       </div>
     </div>
   </div>
@@ -124,7 +139,8 @@
         <img class="card-image" src="simoleon.png" alt="Front Image">
       </div>
       <div class="card-face card-back">
-        <p>Back of Card 2</p>
+        <h1>SIMOLEONS > EVERYTHING</h1>
+        <p>Sure, your sims may have a "needs" panel, but all I'm asking is do you even really care about your sims being successful if they're not in the red? Simoleons should take precedence in any reasonable sim's life.</p>
       </div>
     </div>
   </div>
@@ -135,7 +151,8 @@
         <img class="card-image" src="neg.jpeg" alt="Front Image">
       </div>
       <div class="card-face card-back">
-        <p>Back of Card 3</p>
+        <h1>ENIMIES MAKE ENVY</h1>
+        <p>Enemies are the best propellant for success. Seeing a sim your sim despises do better will be all the fuel one needs to become the ruling leader of the Sim Empire.</p>
       </div>
     </div>
   </div>
