@@ -13,15 +13,15 @@
     }
 
     .content {
-  position: absolute;
-  top: 50%;
-  left: calc(50% + 90px); 
-  transform: translateY(-50%);
-  padding-right: 50px;
-  color: #fff;
-  font-size: 12px; 
-  text-align: right;
-}
+      position: absolute;
+      top: 50%;
+      left: calc(50% + 90px); 
+      transform: translateY(-50%);
+      padding-right: 50px;
+      color: #fff;
+      font-size: 12px; 
+      text-align: right;
+    }
 
   </style>
 </head>
@@ -31,6 +31,22 @@
     <h1>Being perfectly honest</h1>
     <p>i have never played the sims 1. i started playing the sims 4 in 2016. i think once you make yourself known as something it feels impossible to escape it. i have never been one to fill a hole that was dug by my own hand.</p>
   </div>
+
+  <script>
+    // Time in milliseconds (e.g., 5000 = 5 seconds)
+    const redirectTime = 7000;
+
+    // URL of the home page
+    const homePageURL = "index.html";
+
+    // Function to redirect to the home page
+    function redirectToHomePage() {
+      window.location.href = homePageURL;
+    }
+
+    // Set a timer to redirect after the specified time
+    setTimeout(redirectToHomePage, redirectTime);
+  </script>
 
 </body>
 </html>
