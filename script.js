@@ -100,6 +100,8 @@ window.demoDescription = "The laser pointers are drawing some words in Chinese. 
 
 })();
 
+let messageCount = 0;
+
 function sendMessage() {
   var messageInput = document.getElementById("message-input");
   var message = messageInput.value;
@@ -107,8 +109,16 @@ function sendMessage() {
   if (message.trim() !== "") {
     var messagesContainer = document.getElementById("messages-container");
     var newMessageElement = document.createElement("div");
+    newMessageElement.classList.add('message'); // Add class for styling
     newMessageElement.textContent = message;
     messagesContainer.appendChild(newMessageElement);
+    
+    // Increment the message count
+    messageCount++;
+    
+    if (messageCount === 6) {
+      alert("OKAY STOP. seriously. you do not need to sign that many times.");
+    }
     
     // Clear the input field after sending message
     messageInput.value = "";
