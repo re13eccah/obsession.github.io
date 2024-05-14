@@ -5,15 +5,31 @@
 
     <link rel="stylesheet" href="style.css">
     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Board</title>
+    <link rel="stylesheet" href="styles.css">
+
   </head>
   
   <body>
 
-    <h1>I LOVE THE SIMS!!1!</h1>
+    <div id="centered-text">
+      <h1>I LOVE THE SIMS!!1!</h1>
+    </div>
 
-    <img src="kid.gif" alt="sims kid">
+    <div id="centered-gif">
+     <img src="kid.gif" alt="sims kid">
+    </div>
 
     <div id="bg-pixels"></div>
+
+    <div id="message-board">
+      <h1>GUEST BOOK [no hate speech please]</h1>
+      <div id="messages-container"></div>
+      <textarea id="message-input" placeholder="Type your message here..."></textarea>
+      <button onclick="sendMessage()">Send</button>
+    </div>
 
     <script type="text/javascript" src="pts.js"></script>
     <script src="script.js"></script>

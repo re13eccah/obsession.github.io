@@ -99,3 +99,21 @@ window.demoDescription = "The laser pointers are drawing some words in Chinese. 
   space.bindMouse().bindTouch().play();
 
 })();
+
+function sendMessage() {
+  var messageInput = document.getElementById("message-input");
+  var message = messageInput.value;
+  
+  if (message.trim() !== "") {
+    var messagesContainer = document.getElementById("messages-container");
+    var newMessageElement = document.createElement("div");
+    newMessageElement.textContent = message;
+    messagesContainer.appendChild(newMessageElement);
+    
+    // Clear the input field after sending message
+    messageInput.value = "";
+  }
+}
+
+
+
