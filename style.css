@@ -144,6 +144,12 @@ h1 {
   margin-top: 5px;
 }
 
+/* Change text color on hover for sidebar items */
+.sidebar-item a:hover {
+  color: #ff00ff; /* Change to the desired color */
+}
+
+
 .message {
   max-width: 80%; 
   word-wrap: break-word; 
