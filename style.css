@@ -68,12 +68,13 @@ body, html {
 #centered-text {
   text-align: center;
   position: fixed;
-  top: 5%;
+  top: 4%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   color: #ffffff;
   transition: color 0.3s;
+  font-family: 'Comic Sans MS', cursive;
   font-size: 2em;
 }
 
@@ -115,3 +116,29 @@ h1 {
   text-decoration: none; /* Remove underlining on hover */
 }
 
+#sidebar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 200px; /* Adjust width as needed */
+  height: calc(100% - 40px); /* Adjust height to consider padding */
+  overflow-y: auto;
+  background-color: rgba(0, 10, 60, 0.711); /* Semi-transparent background */
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+  color: #fff;
+}
+
+.sidebar-item {
+  margin-bottom: 20px;
+}
+
+.sidebar-item img {
+  width: 100%;
+  height: auto;
+}
+
+.sidebar-item p {
+  text-align: center;
+  margin-top: 5px;
+}
