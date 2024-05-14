@@ -23,6 +23,18 @@
       z-index: 10; 
     }
 
+    .title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #0044ff; 
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 4em; 
+    text-align: center;
+    z-index: 5; 
+  }
+
   /* Card container */
   .card-container {
     display: flex;
@@ -57,12 +69,12 @@
 
   /* Front of the card */
   .card-front {
-    background-color: #ffffff; /* Front background color */
+    background-color: #f0f0f0; /* Front background color */
   }
 
   /* Back of the card */
   .card-back {
-    background-color: #dddddd; /* Back background color */
+    background-color: #faff6c; /* Back background color */
     transform: rotateY(180deg);
   }
 
@@ -91,6 +103,8 @@
     <a href="index.html" class="top-left-gif">
         <img src="star1.gif" alt="Home">
       </a>
+
+      <div class="title">THE SECRETS TO SUCCESSFUL SIMS</div>
 
 <div class="card-container">
   <div class="card">
