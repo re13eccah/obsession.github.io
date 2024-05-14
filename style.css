@@ -79,11 +79,24 @@ body, html {
   font-size: 2em;
 }
 
-
+@keyframes rainbow {
+  0% { color: red; }
+  10% { color: orange; }
+  20% { color: yellow; }
+  30% { color: green; }
+  40% { color: blue; }
+  50% { color: indigo; }
+  60% { color: violet; }
+  70% { color: red; }
+  80% { color: orange; }
+  90% { color: yellow; }
+  100% { color: green; }
+}
 
 #centered-text:hover {
-  color: #d0ff00; 
+  animation: rainbow 4s infinite; /* Adjust duration as needed */
 }
+
 
 h1 {
   background-color: transparent; 

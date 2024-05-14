@@ -12,15 +12,96 @@
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
-
+      overflow: hidden; /* Prevents scrollbars from showing due to animations */
     }
-    
+
+    .top-center {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .top-left-gif {
+      position: absolute;
+      top: 20px; 
+      left: 20px; 
+      z-index: 10; 
+    }
+
+    .moving-text {
+      position: absolute;
+      width: 300px;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 2px solid #000;
+      text-align: center;
+      animation: moveAround 10s linear infinite;
+      animation-play-state: running;
+      animation-fill-mode: both; /* Ensure boxes stay in their keyframe positions */
+    }
+
+    .text1 { animation-delay: 0s; }
+    .text2 { animation-delay: 2s; }
+    .text3 { animation-delay: 4s; }
+
+    @keyframes moveAround {
+      0% { top: 15%; left: 15%; }
+      25% { top: 15%; left: 70%; }
+      50% { top: 70%; left: 70%; }
+      75% { top: 70%; left: 15%; }
+      100% { top: 15%; left: 15%; }
+    }
+
+    .moving-text h1 {
+      font-size: 20px;
+      color: #ff6347; 
+      font-family: 'Comic Sans MS', cursive;
+      margin-bottom: 10px;
+    }
+
+    .moving-text p {
+      font-size: 14px;
+      color: #4682b4; 
+      font-family: 'Georgia', serif;
+      line-height: 1.5;
+    }
+
+    .moving-text img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #4682b4; 
+    }
+
   </style>
 
-<link rel="icon" type="image/gif" href="sparkle favicon.gif">
-
+  <link rel="icon" type="image/gif" href="sparkle favicon.gif">
+  
 </head>
 <body>
-  
+  <img src="CRAZY SIMS.gif" alt="CRAZY SIMS GIF" class="top-center">
+
+  <a href="index.html" class="top-left-gif">
+    <img src="star1.gif" alt="Home">
+  </a>
+
+  <div class="moving-text text1"><h1>BEST WORLD IN THE WHOLE SIMS FRANCHISE!!</h1><p>they have never done it like this again. trust me i have made them try.</p></div>
+  <div class="moving-text text2"><h1>⚠️BE AWARE⚠️</h1><p>guys one of the clown rides once became sentient and ate my favourite sims :-/ </p>
+    <img src="man.gif" alt="sims kid"></div>
+  <div class="moving-text text3"><p>I can bring myself to tears thinking of a carnival in the cold of Autumn. The sky is grey, the rain is holding back. Brown grass and dry leaves harmonise with my footsteps. Music is playing, but I think I'm a fair way away from the festivities - it's soft and strange, hauntingly cheery. It's all because of this.</p></div>
+
+  <script>
+    document.body.addEventListener('mousedown', function() {
+      document.querySelectorAll('.moving-text').forEach(function(el) {
+        el.style.animationPlayState = 'paused';
+      });
+    });
+
+    document.body.addEventListener('mouseup', function() {
+      document.querySelectorAll('.moving-text').forEach(function(el) {
+        el.style.animationPlayState = 'running';
+      });
+    });
+  </script>
 </body>
 </html>
