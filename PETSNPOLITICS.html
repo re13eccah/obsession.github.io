@@ -17,94 +17,117 @@ body {
   background-position: center; 
 }
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  .header {
-    text-align: center;
-    border-bottom: 2px solid #000;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-  }
+.header {
+  text-align: center;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
 
-  .header h1 {
-    margin: 0;
-    font-size: 3em;
-  }
+.header h1 {
+  margin: 0;
+  font-size: 3em;
+}
 
-  .header p {
-    margin: 5px 0;
-    font-size: 1.2em;
-  }
+.header p {
+  margin: 5px 0;
+  font-size: 1.2em;
+}
 
-  .columns {
-    column-count: 3;
-    column-gap: 20px;
-  }
+.date {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
 
-  .columns p, .columns img {
-    margin-bottom: 20px;
-  }
+.columns {
+  column-count: 3;
+  column-gap: 20px;
+}
 
-  .columns img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    break-inside: avoid;
-  }
+.columns p, .columns img {
+  margin-bottom: 20px;
+}
 
-  .article-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+.columns img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  break-inside: avoid;
+}
 
-  .top-left-gif {
-      position: absolute;
-      top: 20px; 
-      left: 20px; 
-      z-index: 10; 
-    }
+.columns p {
+  text-align: justify;
+}
+
+.article-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.top-left-gif {
+  position: absolute;
+  top: 20px; 
+  left: 20px; 
+  z-index: 10; 
+}
 
 </style>
 </head>
 <body>
 
-    <a href="index.html" class="top-left-gif">
-        <img src="star1.gif" alt="Home">
-      </a>
+<a href="index.html" class="top-left-gif">
+    <img src="star1.gif" alt="Home">
+</a>
 
 <div class="container">
   <div class="header">
     <h1>PETS N' POLITICS</h1>
     <p>The Real Reason We Play The Sims</p>
+    <div class="date" id="date"></div>
   </div>
 
   <div class="columns">
     <div class="article">
-      <p class="article-title">Breaking News: SimCity Expansion Announced!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id arcu aliquet, elementum nisi quis, condimentum nibh. Phasellus lacinia quam nec mauris faucibus, ut vehicula lorem congue. Cras feugiat nulla magna, ac aliquam purus aliquam at. Nulla facilisi. Fusce sit amet risus in orci venenatis scelerisque. Suspendisse potenti.</p>
-      <img src="https://via.placeholder.com/300" alt="SimCity Expansion">
-      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis consequat mauris libero, sit amet commodo urna molestie et. Nam tincidunt, ex eget suscipit feugiat, ipsum libero vehicula arcu, a dapibus leo nisi non odio. Suspendisse potenti. Nullam fringilla arcu a dignissim placerat.</p>
+      <p class="article-title">SIM ANIMAL OF THE WEEK</p>
+      <p>OH MAN! What a tough week. My parents just got divorced so now all *I* want to think about is THIS cutie pie that has been voted the "SIMS ANIMAL OF THE WEEK" for the 17th consecutive week! Congratulations little brown and white dog. We are all very proud of you.</p>
+      <img src="sims dog.png" alt="sims dog">
+      <p>Let's take a look at those low poly legs and precious button.. black... sort of, soulless eyes? After seeing this image and having to write a caption for the 17th week in a row I'm kind of realising it's a bit scary. I don't think I can do this again. Can you guys vote for one of the cats this week, maybe? I'll even settle for one of those low poly birds from one of then newer games. Please.</p>
     </div>
     <div class="article">
-      <p class="article-title">Sim Economy on the Rise</p>
-      <p>Quisque euismod justo nec lacus dapibus, a eleifend felis laoreet. In in urna ut eros pharetra gravida. Nullam hendrerit posuere nisi, ac aliquet lectus. Etiam nec commodo arcu, sit amet efficitur augue. Nam ut dui vel nisi ultricies fermentum. Curabitur ut eros nec eros tincidunt suscipit non non urna.</p>
-      <img src="https://via.placeholder.com/300" alt="Sim Economy">
-      <p>Praesent congue tristique elit. Proin vitae lacus ac lorem feugiat pulvinar. Phasellus et sem ac lorem placerat fermentum. Cras suscipit auctor augue nec ultricies. Nullam vel arcu vel ligula malesuada scelerisque. Phasellus eu tincidunt magna. Duis et arcu lorem. Aliquam erat volutpat.</p>
+      <p class="article-title">IT'S REALLY NOT THAT SERIOUS</p>
+      <p>DRAMA ALERT: Things have been heating up this week in the Sims Community!</p>
+      <img src="argue.png" alt="Sims arguing">
+      <p>Discourse has been widespread surrounding how seriously people take their own gameplay, the spectrum ranging from obsessive fans that consider the lives of their sims to be equal to humans, to those that couldn't care less if their computer caught fire and wiped all their saves. Yikes! All I have to say is, it's really not that serious whether it's serious or not. DO NOT BRING ME INTO THIS!!!!</p>
     </div>
     <div class="article">
-      <p class="article-title">New Sims Expansion Pack: Island Paradise</p>
-      <p>Fusce eget orci nec eros convallis convallis nec sed nisl. Vivamus at ligula sit amet massa congue varius. Maecenas venenatis ex id arcu ullamcorper, in euismod erat tempus. In et sem vel ante rhoncus euismod. Etiam quis elit sit amet diam mollis ultrices. Curabitur at felis consectetur, scelerisque mauris nec, fringilla purus.</p>
-      <img src="https://via.placeholder.com/300" alt="Island Paradise">
-      <p>Mauris non erat ac lorem suscipit malesuada. Aliquam erat volutpat. Nunc a sem eget ex elementum aliquet. Nullam fermentum lacus id dolor volutpat convallis. Donec scelerisque, metus at consectetur blandit, lorem libero placerat magna, at pretium ligula turpis non libero. Cras vestibulum facilisis orci, sit amet tincidunt eros tristique sit amet.</p>
+      <p class="article-title">REMEMBER? REMEMBER? REMEMBER? REMEMBER? REMEMBER? REMEMBER? REMEMBER? REMEMBER? REMEMBER?</p>
+      <p></p>
+      <img src="computer.png" alt="old computer">
+      <p></p>
     </div>
   </div>
 </div>
+
+<script>
+  const dateElement = document.getElementById('date');
+  const currentDate = new Date().toLocaleDateString('en-US', {
+    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+  });
+  dateElement.textContent = currentDate;
+</script>
+
 </body>
 </html>
